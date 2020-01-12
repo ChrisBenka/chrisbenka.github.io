@@ -28,7 +28,5 @@
 ## y = Bernouli(p)
 ## The MLE for a Bernouli r.v. is the emperical count of y = 1 /|y|
 function [p] = NB_YPrior (y)
-  size_data = size(y,1)
-  emperical_count_y_one = size(y(y == 1),1)
-  p = emperical_count_y_one / size_data
+  p = size(y(y == 1),1) / size(y,1);
 endfunction

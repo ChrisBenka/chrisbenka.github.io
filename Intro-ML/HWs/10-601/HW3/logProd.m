@@ -24,5 +24,5 @@
 
 #Given a vector x the logarithmic product is the sum of all vector components 
 function [retval] = logProd (x)
-  retval =  sum(x)
+  retval =  sum(x);
 endfunction
